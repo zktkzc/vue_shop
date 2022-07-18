@@ -4,7 +4,7 @@
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>商品管理</el-breadcrumb-item>
-      <el-breadcrumb-item>商品列表</el-breadcrumb-item>
+      <el-breadcrumb-item>商品分类</el-breadcrumb-item>
     </el-breadcrumb>
 
     <el-card>
@@ -134,12 +134,6 @@ export default {
           {
             required: true,
             message: '请输入分类名称',
-            trigger: 'blur'
-          },
-          {
-            min: 3,
-            max: 5,
-            message: '长度在 3 到 5 个字符',
             trigger: 'blur'
           }
         ]
